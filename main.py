@@ -47,7 +47,7 @@ def find_in_base(find_chet, find_nom=''):
                     if len(result) > 0:
                         return True, usl
                     else:
-                        return False
+                        return False, usl
 
             except mariadb.Error as e2:
                 print(f'Request execution error: {e2}')
